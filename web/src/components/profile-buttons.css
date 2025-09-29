@@ -1,0 +1,29 @@
+.profile-buttons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.profile-buttons-row .profile-btn-card {
+  flex: 1 1 0;
+  max-width: 180px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark-bg);
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.profile-buttons-row .profile-btn-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+.profile-buttons-row .profile-btn-card h3,
+.profile-buttons-row .profile-btn-card p {
+  color: #fff;
+  margin-bottom: 0.25rem;
+}

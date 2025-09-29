@@ -12,6 +12,9 @@ import { MyLibrary } from '../../pages/MyLibrary';
 import { MyQuotes } from '../../pages/MyQuotes';
 import { MyReviews } from '../../pages/MyReviews';
 import { MyRecommendations } from '../../pages/MyRecommendations';
+import { UserSearch } from '../../components/UserSearch';
+import { MyFollowers } from '../../components/MyFollowers';
+import { MyFollowings } from '../../components/MyFollowings';
 
 export const routesConfig = [
   {
@@ -97,5 +100,23 @@ export const routesConfig = [
     path: '/user_card',
     component: <UserCard />,
     showInNavbar: true,
+  },
+  {
+    name: 'Buscar Usuarios',
+    path: '/seacrh_users',
+    component: <UserSearch />,
+    showInNavbar: false,
+  },
+  {
+    name: 'Mis Seguidores',
+    path: '/my_followers',
+    component: <MyFollowers />,
+    showInNavbar: false,
+  },
+  {
+    name: 'Siguiendo',
+    path: '/my_followings',
+    component: <MyFollowings />,
+    showInNavbar: false,
   },
 ];
